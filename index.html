@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Pokémon a la Pokédex</title>
+</head>
+<body>
+    <h1>Agregar Pokémon a la Pokédex</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre del Pokémon:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="numero">Número de la Pokédex:</label>
+        <input type="number" id="numero" name="numero" required><br><br>
+
+        <fieldset>
+            <legend>Tipo de Pokémon:</legend>
+            <input type="radio" id="fuego" name="tipo" value="fuego">
+            <label for="fuego">Fuego</label><br>
+            <input type="radio" id="agua" name="tipo" value="agua">
+            <label for="agua">Agua</label><br>
+            <input type="radio" id="planta" name="tipo" value="planta">
+            <label for="planta">Planta</label><br>
+            <input type="radio" id="electrico" name="tipo" value="electrico">
+            <label for="electrico">Eléctrico</label>
+        </fieldset><br>
+
+        <label for="evolucion">Nivel de evolución:</label>
+        <select id="evolucion" name="evolucion">
+            <option value="basico">Básico</option>
+            <option value="primera">Primera evolución</option>
+            <option value="segunda">Segunda evolución</option>
+        </select><br><br>
+
+        <label for="poder">Nivel de poder:</label>
+        <input type="range" id="poder" name="poder" min="1" max="100" value="50"><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Agregar Pokémon">
+        <input type="reset" value="Reiniciar">
+    </form>
+</body>
+</html>
